@@ -12,10 +12,10 @@
 <body>
     <h2>Spurthi Ravula speed check</h2>
 
-    <div class="container border bg-danger" style="padding-top: 10px; color: rgb(75, 74, 78);">
+    <div class="container border bg-danger" style="padding-top: 10px; color: rgb(80, 70, 70);">
       <p id="target">Your Time</p>
     </div>
-    <div class="container border bg-info" style="padding-top: 10px; color: rgb(203, 171, 171);">
+    <div class="container border bg-info" style="padding-top: 10px; color: rgb(215, 178, 179);">
       <p id="counter">Count</p>
     </div>
     <br>
@@ -23,6 +23,7 @@
     <div class="container">
       <button type="button" class="btn btn-primary" onclick="startTime()">Start Timer</button>
       <button type="button" class="btn btn-info" onclick="recordTime()">React</button>
+      <button type="button" class="btn btn-secondary" onclick="randomStart()">Random Start</button>
     </div>
     
     
@@ -50,6 +51,12 @@
           }
           },startCount*1000)
       }
+
+      function randomStart(){
+        startCount = Math.floor(Math.random()*(10-2+1)+2)
+        startTime()
+    }
+
 
     </script>
   

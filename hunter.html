@@ -34,6 +34,10 @@
     <div class="container border bg-secondary" id="help" style="padding-top: 10px; color: white;">
         <p>Help report</p>
     </div><br>
+    <div class="container">
+        <button type="button" class="btn btn-primary" onclick="newGame()">New Game</button>
+    </div>
+    <br>
 
 
     <div class="container">
@@ -140,6 +144,20 @@
             }
             else {
                 document.getElementById("help").innerHTML = "sorry, no help available";
+            }
+        }
+
+        function newGame() {
+            const mouseLocation = Math.floor(Math.random() * 24);
+            const catLocation = Math.floor(Math.random() * 24);
+            const bushesText = "Number of bushes checked is 0";
+            const penaltyText = "Penalty is 0";
+
+            document.getElementById("bushes").innerHTML = bushesText;
+            document.getElementById("penalty").innerHTML = penaltyText;
+
+            for (let i = 0; i <= 23; i++) {
+                document.getElementById(ids[i]).src = "bush.jpg";
             }
         }
 

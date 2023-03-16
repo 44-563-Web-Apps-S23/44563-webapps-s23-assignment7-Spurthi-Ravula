@@ -7,12 +7,12 @@
         .flex-container {
             display: flex;
             flex-direction: row;
-            background-color: rgb(111, 110, 110);
+            background-color: rgb(119, 119, 119);
         }
 
         .flex-container>div {
             /*div children of the flex container*/
-            background-color: rgb(153, 143, 212);
+            background-color: rgb(153, 173, 219);
             margin: 10px;
             padding: 20px;
             font-size: 30px;
@@ -54,6 +54,7 @@
     <button class="btn" onclick="makeNewDiv()">Add value</button>
     <input class="btn" type="button" value="Get" onclick="get()">
     <input class="btn" type="button" value="Delay" onclick="delay()">
+    <button onclick="promote()" class="btn btn-secondary">Promote</button>
 
 
 </body>
@@ -92,6 +93,22 @@
             let container_div = document.getElementById("target")
             container_div.insertBefore(remove_item, container_div.firstChild)
         }
+    }
+
+    function promote() {
+        const queueItems = document.getElementsByClassName("delayQ");
+        const length = queueItems.length;
+        const random = Math.floor(Math.random() * length);
+        console.log(random);
+
+        const element = document.createElement("div");
+        element.innerHTML = queueItems[random].textContent;
+        element.style.color = "orange";
+        element.classList.add("delayQ");
+
+        const container = document.getElementById("target");
+        queueItems[random].remove();
+        container.insertBefore(element, queueItems[0]);
     }
 
 </script>
