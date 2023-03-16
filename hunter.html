@@ -18,79 +18,132 @@
 </head>
 
 <body>
+    <h1>Find the mouse by Spurthi Ravula</h1>
+    <div class="container border bg-dark" style="padding-top: 10px; color: white;">
+        <p>Click on the bushes to search for the mouse, beware the cat</p>
+    </div>
+    <div class="container border bg-warning" id="bushes" style="padding-top: 10px; color: white;">
+        <p>Number of bushes checked is zero</p>
+    </div>
+    <div class="container border bg-success" id="penalty" style="padding-top: 10px; color: white;">
+        <p>Penalty is zero</p>
+    </div>
+    <div class="container border bg-info" style="padding-top: 10px; color: white;">
+        <p onclick="help()">Click for help</p>
+    </div>
+    <div class="container border bg-secondary" id="help" style="padding-top: 10px; color: white;">
+        <p>Help report</p>
+    </div><br>
 
-    <h1 style="color:rgb(15, 167, 15);font-weight:bold; font-family:'Times New Roman', Times, serif">Find the mouse by
-        Spurthi Ravula</h1>
-    <p style="font-size:large ;">Click on the bushes to search for the mouse, beware the cat</p>
-    <p id="bushes" style="background-color:bisque ;color:chocolate">Number of bushes checked is zero.</p>
-    <p id="penalty" style="font-weight:lighter ;">Penalty is zero.</p>
-    <p>Click for help</p>
-    <p id="help" style="color:red">Help report</p>
 
-
-    <div class="row container">
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
+    <div class="container">
+        <div class="image-row d-flex">
+            <div>
+                <img id="s0" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(0)">
+                <img id="s1" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(1)">
+                <img id="s2" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(2)">
+                <img id="s3" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(3)">
+                <img id="s4" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(4)">
+                <img id="s5" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(5)">
+            </div>
         </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
+        <div class="image-row d-flex">
+            <div>
+                <img id="s6" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(6)">
+                <img id="s7" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(7)">
+                <img id="s8" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(8)">
+                <img id="s9" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(9)">
+                <img id="s10" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(10)">
+                <img id="s11" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(11)">
+            </div>
         </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
+        <div class="image-row d-flex">
+            <div>
+                <img id="s12" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(12)">
+                <img id="s13" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(13)">
+                <img id="s14" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(14)">
+                <img id="s15" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(15)">
+                <img id="s16" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(16)">
+                <img id="s17" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(17)">
+            </div>
         </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
+        <div class="image-row d-flex">
+            <div>
+                <img id="s18" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(18)">
+                <img id="s19" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(19)">
+                <img id="s20" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(20)">
+                <img id="s21" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(21)">
+                <img id="s22" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(22)">
+                <img id="s23" src="bush.jpg" alt="Bushes" height="125" width="125" onclick="check(23)">
+            </div>
         </div>
     </div>
-    <br>
-    <div class="row container">
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-    </div>
-    <br>
-    <div class="row container">
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-    </div>
-    <br>
-    <div class="row container">
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-        <div class="col-md-2"><img src="bush.jpg" class="img-fluid" alt="Responsive image" width="400" height="400">
-        </div>
-    </div>
+    <script>
+        var ids = ["s0", "s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10",
+            "s11", "s12", "s13", "s14", "s15", "s16", "s17", "s18", "s19", "s20", "s21", "s22", "s23"]
+        var checkCount = 0
+        var penalty = 0
+        var lastCheck = 0
+        var mouseLocation = 13
+        var catLocation = 21
+        let gameOver = false
+        function check(position) {
+            if (gameOver) {
+                return;
+            }
+            var id = ids[position]
+            img = document.getElementById(id);
+            if (position == mouseLocation) {
+                img.src = "mouse.jpg";
+                gameOver = true;
+                penalty -= 3;
 
+            }
+            else if (position == catLocation) {
+                img.src = "tiger.png";
+                gameOver = true;
+                penalty += 4;
+            }
+            else {
+                img.src = "grass.jpg";
+            }
+            checkCount = checkCount + 1;
+            penalty = penalty + 1;
 
+            document.getElementById("bushes").innerHTML = "Number of bushes checked is: " + checkCount;
+            document.getElementById("penalty").innerHTML = "penalty is: " + penalty;
+            lastCheck = position;
+        }
+        function help() {
+            console.log(lastCheck)
+            const catRow = Math.floor(catLocation / 4);
+            const catColumn = catLocation % 6;
+            const mouseRow = Math.floor(mouseLocation / 4);
+            const mouseColumn = mouseLocation % 6;
+            const lastRow = Math.floor(lastCheck / 4);
+            const lastColumn = lastCheck % 6;
+            console.log(catRow)
+            console.log(catColumn)
+            console.log(mouseRow)
+            console.log(mouseColumn)
+            console.log(lastRow)
+            console.log(lastColumn)
+            penalty = penalty + 2;
+            document.getElementById("penalty").innerHTML = "Penalty is " + penalty;
 
+            if ((Math.abs(catRow - lastRow) <= 1 && Math.abs(catColumn - lastColumn) <= 1) && (Math.abs(catRow - mouseRow) > 1 || Math.abs(catColumn - mouseColumn) > 1)) {
+                document.getElementById("help").innerHTML = "meow";
+            }
 
+            else if ((Math.abs(mouseRow - lastRow) <= 1 && Math.abs(mouseColumn - lastColumn) <= 1) && (Math.abs(catRow - mouseRow) > 1 || Math.abs(catColumn - mouseColumn) > 1)) {
+                document.getElementById("help").innerHTML = "squeak";
+            }
+            else {
+                document.getElementById("help").innerHTML = "sorry, no help available";
+            }
+        }
+
+    </script>
 
 
 </body>
